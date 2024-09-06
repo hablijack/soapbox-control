@@ -1,10 +1,10 @@
 '''Synthesisation of primitive audio building blocks'''
 
 import cfg
-
 import math
 import numpy as np
 import random
+
 
 def sine_wave_note(frequency, duration):
     '''

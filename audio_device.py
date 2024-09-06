@@ -1,6 +1,6 @@
 import cfg
-
 import pyaudio
+
 
 class AudioDevice:
     def __init__(self):

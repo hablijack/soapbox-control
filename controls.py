@@ -2,6 +2,7 @@ import time
 from pynput import keyboard
 import threading
 
+
 class _BlockingInputThread(threading.Thread):
     '''
     The `inputs` library's IO is blocking, which means a new thread is needed to wait for
@@ -22,9 +23,6 @@ class _BlockingInputThread(threading.Thread):
         listener.start()
 
 def capture_input(engine):
-    
-    print('Press Ctrl+C to exit, any key to rev\n')
-
     lock = threading.Lock()
     blockingInputThread = _BlockingInputThread(lock)
     blockingInputThread.start()

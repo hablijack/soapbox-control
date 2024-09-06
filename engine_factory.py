@@ -1,9 +1,8 @@
-# Reference: https://en.wikipedia.org/wiki/Big-bang_firing_order
-
 import synth
 import audio_tools
 from engine import Engine
 import random as rd
+
 
 _fire_snd = synth.sine_wave_note(frequency=160, duration=1)
 audio_tools.normalize_volume(_fire_snd)
